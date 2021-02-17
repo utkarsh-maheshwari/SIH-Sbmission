@@ -1,0 +1,35 @@
+LKP_time = input()                                                                        #in hours   
+LKP_position = input()     
+LKP_Altitude = input()                                                               #in degrees (lat,lon)
+Distress_time = input() #If available                                                     #in hours
+Distress_position = input() #If available                                                 #in degrees (lat,lon)
+Distress_Altitude = input()                                                                     #in feets
+brng = input() #bearing calculated by using source and destination                        #in degrees
+
+speed = input()                                                                           #in kts
+GSpeed = input() #Can be extracted from the communication data                      in kts
+VSpeed = input() #Can be extracted from the communication data                      in kts
+Glide_TAS = input() #aircraft specific                                                          #in kts (NM per hour)
+Glide_Ratio = input() #aircraft specific
+
+Communication_Interval = input() # Constant, To be decided (in hours)                     #in hours
+Terrain_Altitude = input()                                                                      #in feets
+Altitude_Loss = Distress_Altitude - Terrain_Altitude                                            #in feets
+
+Comm_Mode = input() #Mode of comm between aircraft and station. Choose one from the keys of Nav_Fic_Error_List
+Craft_Type = input() #Single,Dual or multi engine?
+Search_Endurance = input()                                                                  #in hours
+Search_Speed = input() #speed of vehicle or aircraft used. To be given by SAR team      in kts
+On_Scene_Endurance = input() #Time search team can provide sor that point               in hours
+Daylight_hours = input() #Can be calculated.                                            in hours
+Search_Altitude = input() #Altitude at which SAR airplane is flying                     in feets
+Search_obj = input() #Person or vehicle or aircraft(Big or small)                       
+visibility = input() #6,9,19,28,37. One of these                                        
+vegetation = input() #Low(15-60%) moderate(60-85%) or High(over 85%) 
+
+Glide_Ratio = input() #aircraft specific
+destination=input()
+
+
+Search_Speed=input()
+Search_Endurance=input()
