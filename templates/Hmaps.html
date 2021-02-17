@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Polylines</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmEyCR84FZoV_bLHFqPykOTRk3Q8AUYQA&callback=initMap&libraries=&v=weekly"
+    defer></script>
+  <style type="text/css">
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+
+    #floating-panel {
+      position: absolute;
+      top: 10px;
+      left: 25%;
+      z-index: 5;
+      background-color: #fff;
+      padding: 5px;
+      border: 1px solid #999;
+      text-align: center;
+      font-family: "Roboto", "sans-serif";
+      line-height: 30px;
+      padding-left: 10px;
+    }
+
+    #floating-panel {
+      background-color: #fff;
+      border: 1px solid #999;
+      left: 25%;
+      padding: 5px;
+      position: absolute;
+      top: 10px;
+      z-index: 5;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <script>
+    "use strict";
+
+    // This example creates a 2-pixel-wide red polyline showing the path of
+    // the first trans-Pacific flight between Oakland, CA, and Brisbane,
+    // Australia which was made by Charles Kingsford Smith.
+    var dp_lat = {{ lat| safe}}
+    var dp_long = {{ long| safe}}
+    var cw = {{ cw| safe}}
+    cw = cw / 10000
+    var length = cw * 12
+    var st_lat = dp_lat + length / 138
+    var st_long = dp_long - length / 138
+    var lat_L = new Array(12)
+    var long_L = new Array(12)
+    var lat_R = new Array(12)
+    var long_R = new Array(12)
+    var lat_T = new Array(12)
+    var long_T = new Array(12)
+    var lat_B = new Array(12)
+    var long_B = new Array(12)
+    for (var i = 0; i < 12; i++) {
+      lat_L[i] = st_lat - (cw * (i)) / 69
+      long_L[i] = st_long + length / 69
+
+      lat_R[i] = st_lat - (cw * (i)) / 69
+      long_R[i] = st_long
+
+      lat_T[i] = st_lat
+      long_T[i] = st_long + length / 69 - (cw * (i)) / 69
+
+      lat_B[i] = st_lat - length / 69
+      long_B[i] = st_long + length / 69 - (cw * (i)) / 69
+    }
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: {
+          lat: dp_lat,
+          lng: dp_long
+        },
+        mapTypeId: "terrain"
+      });
+
+      const flightPlanCoordinates1 = [
+        {
+          lat: lat_L[0],
+          lng: long_L[0]
+        }, {
+          lat: lat_R[0],
+          lng: long_R[0]
+        },
+      ];
+      const flightPath1 = new google.maps.Polyline({
+        path: flightPlanCoordinates1,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath1.setMap(map);
+
+      const flightPlanCoordinates2 = [
+        {
+          lat: lat_L[1],
+          lng: long_L[1]
+        }, {
+          lat: lat_R[1],
+          lng: long_R[1]
+        },
+      ];
+      const flightPath2 = new google.maps.Polyline({
+        path: flightPlanCoordinates2,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath2.setMap(map);
+
+      const flightPlanCoordinates3 = [
+        {
+          lat: lat_L[2],
+          lng: long_L[2]
+        }, {
+          lat: lat_R[2],
+          lng: long_R[2]
+        },
+      ];
+      const flightPath3 = new google.maps.Polyline({
+        path: flightPlanCoordinates3,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath3.setMap(map);
+
+      const flightPlanCoordinates4 = [
+        {
+          lat: lat_L[3],
+          lng: long_L[3]
+        }, {
+          lat: lat_R[3],
+          lng: long_R[3]
+        },
+      ];
+      const flightPath4 = new google.maps.Polyline({
+        path: flightPlanCoordinates4,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath4.setMap(map);
+
+      const flightPlanCoordinates5 = [
+        {
+          lat: lat_L[4],
+          lng: long_L[4]
+        }, {
+          lat: lat_R[4],
+          lng: long_R[4]
+        },
+      ];
+      const flightPath5 = new google.maps.Polyline({
+        path: flightPlanCoordinates5,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath5.setMap(map);
+
+      const flightPlanCoordinates6 = [
+        {
+          lat: lat_L[5],
+          lng: long_L[5]
+        }, {
+          lat: lat_R[5],
+          lng: long_R[5]
+        },
+      ];
+      const flightPath6 = new google.maps.Polyline({
+        path: flightPlanCoordinates6,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath6.setMap(map);
+
+      const flightPlanCoordinates7 = [
+        {
+          lat: lat_L[6],
+          lng: long_L[6]
+        }, {
+          lat: lat_R[6],
+          lng: long_R[6]
+        },
+      ];
+      const flightPath7 = new google.maps.Polyline({
+        path: flightPlanCoordinates7,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath7.setMap(map);
+
+      const flightPlanCoordinates8 = [
+        {
+          lat: lat_L[7],
+          lng: long_L[7]
+        }, {
+          lat: lat_R[7],
+          lng: long_R[7]
+        },
+      ];
+      const flightPath8 = new google.maps.Polyline({
+        path: flightPlanCoordinates8,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath8.setMap(map);
+
+      const flightPlanCoordinates9 = [
+        {
+          lat: lat_L[8],
+          lng: long_L[8]
+        }, {
+          lat: lat_R[8],
+          lng: long_R[8]
+        },
+      ];
+      const flightPath9 = new google.maps.Polyline({
+        path: flightPlanCoordinates9,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath9.setMap(map);
+
+      const flightPlanCoordinates10 = [
+        {
+          lat: lat_L[9],
+          lng: long_L[9]
+        }, {
+          lat: lat_R[9],
+          lng: long_R[9]
+        },
+      ];
+      const flightPath10 = new google.maps.Polyline({
+        path: flightPlanCoordinates10,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath10.setMap(map);
+
+      const flightPlanCoordinates11 = [
+        {
+          lat: lat_L[10],
+          lng: long_L[10]
+        }, {
+          lat: lat_R[10],
+          lng: long_R[10]
+        },
+      ];
+      const flightPath11 = new google.maps.Polyline({
+        path: flightPlanCoordinates11,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath11.setMap(map);
+
+      const flightPlanCoordinates12 = [
+        {
+          lat: lat_L[11],
+          lng: long_L[11]
+        }, {
+          lat: lat_R[11],
+          lng: long_R[11]
+        },
+      ];
+      const flightPath12 = new google.maps.Polyline({
+        path: flightPlanCoordinates12,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath12.setMap(map);
+
+      // TOP TO BOTTOM LINES
+
+      const flightPlanCoordinates1T = [
+        {
+          lat: lat_T[0],
+          lng: long_T[0]
+        }, {
+          lat: lat_B[0],
+          lng: long_B[0]
+        },
+      ];
+      const flightPath1T = new google.maps.Polyline({
+        path: flightPlanCoordinates1T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath1T.setMap(map);
+
+      const flightPlanCoordinates2T = [
+        {
+          lat: lat_T[1],
+          lng: long_T[1]
+        }, {
+          lat: lat_B[1],
+          lng: long_B[1]
+        },
+      ];
+      const flightPath2T = new google.maps.Polyline({
+        path: flightPlanCoordinates2T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath2T.setMap(map);
+
+      const flightPlanCoordinates3T = [
+        {
+          lat: lat_T[2],
+          lng: long_T[2]
+        }, {
+          lat: lat_B[2],
+          lng: long_B[2]
+        },
+      ];
+      const flightPath3T = new google.maps.Polyline({
+        path: flightPlanCoordinates3T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath3T.setMap(map);
+
+      const flightPlanCoordinates4T = [
+        {
+          lat: lat_T[3],
+          lng: long_T[3]
+        }, {
+          lat: lat_B[3],
+          lng: long_B[3]
+        },
+      ];
+      const flightPath4T = new google.maps.Polyline({
+        path: flightPlanCoordinates4T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath4T.setMap(map);
+
+      const flightPlanCoordinates5T = [
+        {
+          lat: lat_T[4],
+          lng: long_T[4]
+        }, {
+          lat: lat_B[4],
+          lng: long_B[4]
+        },
+      ];
+      const flightPath5T = new google.maps.Polyline({
+        path: flightPlanCoordinates5T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath5T.setMap(map);
+
+      const flightPlanCoordinates6T = [
+        {
+          lat: lat_T[5],
+          lng: long_T[5]
+        }, {
+          lat: lat_B[5],
+          lng: long_B[5]
+        },
+      ];
+      const flightPath6T = new google.maps.Polyline({
+        path: flightPlanCoordinates6T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath6T.setMap(map);
+
+      const flightPlanCoordinates7T = [
+        {
+          lat: lat_T[6],
+          lng: long_T[6]
+        }, {
+          lat: lat_B[6],
+          lng: long_B[6]
+        },
+      ];
+      const flightPath7T = new google.maps.Polyline({
+        path: flightPlanCoordinates7T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath7T.setMap(map);
+
+      const flightPlanCoordinates8T = [
+        {
+          lat: lat_T[7],
+          lng: long_T[7]
+        }, {
+          lat: lat_B[7],
+          lng: long_B[7]
+        },
+      ];
+      const flightPath8T = new google.maps.Polyline({
+        path: flightPlanCoordinates8T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath8T.setMap(map);
+
+      const flightPlanCoordinates9T = [
+        {
+          lat: lat_T[8],
+          lng: long_T[8]
+        }, {
+          lat: lat_B[8],
+          lng: long_B[8]
+        },
+      ];
+      const flightPath9T = new google.maps.Polyline({
+        path: flightPlanCoordinates9T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath9T.setMap(map);
+
+      const flightPlanCoordinates10T = [
+        {
+          lat: lat_T[9],
+          lng: long_T[9]
+        }, {
+          lat: lat_B[9],
+          lng: long_B[9]
+        },
+      ];
+      const flightPath10T = new google.maps.Polyline({
+        path: flightPlanCoordinates10T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath10T.setMap(map);
+
+      const flightPlanCoordinates11T = [
+        {
+          lat: lat_T[10],
+          lng: long_T[10]
+        }, {
+          lat: lat_B[10],
+          lng: long_B[10]
+        },
+      ];
+      const flightPath11T = new google.maps.Polyline({
+        path: flightPlanCoordinates11T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath11T.setMap(map);
+
+      const flightPlanCoordinates12T = [
+        {
+          lat: lat_T[11],
+          lng: long_T[11]
+        }, {
+          lat: lat_B[11],
+          lng: long_B[11]
+        },
+      ];
+      const flightPath12T = new google.maps.Polyline({
+        path: flightPlanCoordinates12T,
+        geodesic: true,
+        strokeColor: "#FFFFFFF",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+      flightPath12T.setMap(map);
+
+
+    }
+  </script>
+</head>
+
+<body>
+  <div id="floating-panel">
+    <div class="row">
+
+      {{grid[0]}}
+    </div>
+    <div class="row">
+
+      {{grid[1]}}
+    </div>
+    <div class="row">
+
+      {{grid[2]}}
+    </div>
+    <div class="row">
+
+      {{grid[3]}}
+    </div>
+    <div class="row">
+
+      {{grid[4]}}
+    </div>
+    <div class="row">
+
+      {{grid[5]}}
+    </div>
+    <div class="row">
+
+      {{grid[6]}}
+    </div>
+    <div class="row">
+
+      {{grid[7]}}
+    </div>
+    <div class="row">
+
+      {{grid[8]}}
+    </div>
+    <div class="row">
+
+      {{grid[9]}}
+    </div>
+    <div class="row">
+
+      {{grid[10]}}
+    </div>
+    <div class="row">
+
+      {{grid[11]}}
+    </div>
+
+  </div>
+  <div id="map"></div>
+</body>
+
+</html>

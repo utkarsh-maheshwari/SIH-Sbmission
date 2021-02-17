@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Data Collection</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <form action = "/data" method = "POST">
+            <div class="form-group">
+                <label for="LKP_time">LKP_time</label>
+                <input type="text" name="LKP_time" class="form-control" value="16" aria-describedby="emailHelp"
+                    placeholder="LKP_time">
+            </div>
+
+            <div class="form-group">
+                <label for="LKP_position">LKP_position</label>
+                <input type="text" name="LKP_position" class="form-control" value="27 33 33, 82 33 33" aria-describedby="LKP_position"
+                    placeholder="Enter in Lat,Lon format ex: DD MM SS,DD MM SS">
+            </div>
+
+            <div class="form-group">
+                <label for="LKP_Altitude">LKP_Altitude</label>
+                <input type="text" name="LKP_Altitude" class="form-control" value="2000" aria-describedby="emailHelp"
+                    placeholder="LKP_Altitude">
+            </div>
+            
+            <div class="form-group">
+                <label for="Distress_time">Distress_time</label>
+                <input type="text" name="Distress_time" class="form-control" value="16.5" aria-describedby="emailHelp"
+                    placeholder="Distress_time">
+            </div>
+
+            <div class="form-group">
+                <label for="Distress_position">Distress_position</label>
+                <input type="text" name="Distress_position" class="form-control" value="28 34 34, 82 34 34" aria-describedby="emailHelp"
+                    placeholder="Enter in Lat,Lon format ex: DD MM SS,DD MM SS">
+            </div>
+
+            <div class="form-group">
+                <label for="Distress_Altitude">Distress_Altitude</label>
+                <input type="text" name="Distress_Altitude" class="form-control" value="2000" aria-describedby="emailHelp"
+                    placeholder="Distress_Altitude">
+            </div>
+
+            <div class="form-group">
+                <label for="brng">brng</label>
+                <input type="text" name="brng" class="form-control" value="2" aria-describedby="emailHelp"
+                    placeholder="brng">
+            </div>
+
+            <div class="form-group">
+                <label for="GSpeed">GSpeed</label>
+                <input type="text" name="GSpeed" class="form-control" value="500" aria-describedby="emailHelp"
+                    placeholder="GSpeed">
+            </div>
+
+            <div class="form-group">
+                <label for="VSpeed">VSpeed</label>
+                <input type="text" name="VSpeed" class="form-control" aria-describedby="emailHelp"
+                    placeholder="VSpeed" value="800">
+            </div>
+
+            <div class="form-group" hidden>
+                <label for="Glide_TAS">Glide_TAS</label>
+                <input type="text" name="Glide_TAS" class="form-control" value="2"  aria-describedby="emailHelp"
+                    placeholder="Glide_TAS">
+            </div>
+
+            <div class="form-group" hidden>
+                <label for="Glide_Ratio">Glide_Ratio</label>
+                <input type="text" name="Glide_Ratio" class="form-control" value="0.3" aria-describedby="emailHelp"
+                    placeholder="Glide_Ratio">
+            </div>
+
+            <div class="form-group">
+                <label for="destination">destination</label>
+                <input type="text" name="destination" class="form-control" value="28 58 38, 82 38 38" aria-describedby="emailHelp"
+                    placeholder="Enter in Lat,Lon format ex: DD MM SS,DD MM SS">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>

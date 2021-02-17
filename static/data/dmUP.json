@@ -1,0 +1,454 @@
+{
+    "UP": [
+        {
+            "District": "Agra",
+            "DM": "Prabhu Narayan Singh",
+            "Contact": "9454417509",
+            "Email": "dmagr@nic.in"
+        },
+        {
+            "District": "Firozabad",
+            "DM": "Chandra Vijay Singh",
+            "Contact": "9454417510",
+            "Email": "dmfir@nic.in"
+        },
+        {
+            "District": "Mainpuri",
+            "DM": "Mahendra Bahadur Singh",
+            "Contact": "9454417511",
+            "Email": "dmmai@nic.in"
+        },
+        {
+            "District": "Mathura",
+            "DM": "Dr. Sarvagya Ram Mishra",
+            "Contact": "9454417512",
+            "Email": "dmmat@nic.in"
+        },
+        {
+            "District": "Prayagraj",
+            "DM": "Bhanu Chandra Goswami",
+            "Contact": "9454417517",
+            "Email": "dmall@nic.in"
+        },
+        {
+            "District": "Kaushambi",
+            "DM": "Manish Kumar Verma",
+            "Contact": "9454417519",
+            "Email": "dmkos@nic.in"
+        },
+        {
+            "District": "Fatehpur",
+            "DM": "Sanjeev Singh",
+            "Contact": "9454417518",
+            "Email": "dmfat@nic.in"
+        },
+        {
+            "District": "Pratapgarh",
+            "DM": "Dr. Rupesh Kumar",
+            "Contact": "9454417520",
+            "Email": "dmpra@nic.in"
+        },
+        {
+            "District": "Kanpur Nagar",
+            "DM": "Brahma Dev Ram Tiwari",
+            "Contact": "9454417554",
+            "Email": "dmkap@nic.in"
+        },
+        {
+            "District": "Kanpur Countryside",
+            "DM": "Rakesh Kumar Singh-1",
+            "Contact": "9454417553",
+            "Email": "dmkan@nic.in"
+        },
+        {
+            "District": "Etawah",
+            "DM": "Jitendra Bahadur Singh",
+            "Contact": "9454417551",
+            "Email": "dmetw@nic.in"
+        },
+        {
+            "District": "Auraiya",
+            "DM": "Abhishek Singh - II",
+            "Contact": "9454417550",
+            "Email": "dmaur@nic.in"
+        },
+        {
+            "District": "Farrukhabad",
+            "DM": "Manvendra Singh",
+            "Contact": "9454417552",
+            "Email": "dmfar@nic.in"
+        },
+        {
+            "District": "Kannauj",
+            "DM": "Rakesh Kumar Mishra",
+            "Contact": "9454417555",
+            "Email": "dmknj@nic.in"
+        },
+        {
+            "District": "Ayodhya",
+            "DM": "Anuj Kumar Jha",
+            "Contact": "9454417541",
+            "Email": "dmfai@nic.in"
+        },
+        {
+            "District": "Ambedkarnagar",
+            "DM": "Rakesh Kumar Mishra II ",
+            "Contact": "9454417539",
+            "Email": "dmamb@nic.in"
+        },
+        {
+            "District": "Barabanki",
+            "DM": "Dr. Adarsh ​​Singh",
+            "Contact": "9454417540",
+            "Email": "dmbab@nic.in"
+        },
+        {
+            "District": "Sultanpur",
+            "DM": "Ms. C Indumati",
+            "Contact": "9454417542",
+            "Email": "dmsul@nic.in"
+        },
+        {
+            "District": "Amethi",
+            "DM": "Arun Kumar",
+            "Contact": "9454418891",
+            "Email": "dmamethi-up@nic.in"
+        },
+        {
+            "District": "Gorakhpur",
+            "DM": "Vijayendra Pandian",
+            "Contact": "9454417544",
+            "Email": "dmgor@nic.in"
+        },
+        {
+            "District": "Deoria",
+            "DM": "Amit Kishore",
+            "Contact": "9454417543",
+            "Email": "dmdeo@nic.in"
+        },
+        {
+            "District": "Maharajganj",
+            "DM": "Dr. Ujjwal Kumar ",
+            "Contact": "9454417546",
+            "Email": "dmmah@nic.in"
+        },
+        {
+            "District": "Kushinagar",
+            "DM": "Bhupendra S Chaudhary",
+            "Contact": "9454417545",
+            "Email": "dmkus@nic.in"
+        },
+        {
+            "District": "Jhansi",
+            "DM": "Andhra Vamsi",
+            "Contact": "9454417547",
+            "Email": "dmjha@nic.in"
+        },
+        {
+            "District": "Jalaun",
+            "DM": "Dr. Mannan Akhtar",
+            "Contact": "9454417548",
+            "Email": "dmjal@nic.in"
+        },
+        {
+            "District": "Lalitpur",
+            "DM": "Yogesh Kumar Shukla",
+            "Contact": "9454417549",
+            "Email": "dmlal@nic.in"
+        },
+        {
+            "District": "Banda",
+            "DM": "Amit Singh Bansal",
+            "Contact": "9454417531",
+            "Email": "dmban@nic.in"
+        },
+        {
+            "District": "Chitrakoot",
+            "DM": "Shesh Mani Pandey ",
+            "Contact": "9454417532",
+            "Email": "dmchi@nic.in"
+        },
+        {
+            "District": "Hamirpur",
+            "DM": "Dnyaneshwar Tripathi",
+            "Contact": "9454417533",
+            "Email": "dmham@nic.in"
+        },
+        {
+            "District": "Mahoba",
+            "DM": "Awadhesh Kumar Tiwari",
+            "Contact": "9454417534",
+            "Email": "dmmab@nic.in"
+        },
+        {
+            "District": "Gonda",
+            "DM": "Dr. Nitin Bansal",
+            "Contact": "9454417537",
+            "Email": "dmchi@nic.in"
+        },
+        {
+            "District": "Bahraich",
+            "DM": "Shambhu Kumar",
+            "Contact": "9454417535",
+            "Email": "dmbeh@nic.in"
+        },
+        {
+            "District": "Balrampur",
+            "DM": "Krishna Karunesh ",
+            "Contact": "9454417536",
+            "Email": "dmblr@nic.in"
+        },
+        {
+            "District": "Shravasti",
+            "DM": "Ms. Yashu Rustagi",
+            "Contact": "9454417538",
+            "Email": "dmshr@nic.in"
+        },
+        {
+            "District": "Saharanpur",
+            "DM": "Akhilesh Singh",
+            "Contact": "9454417575",
+            "Email": "dmsah@nic.in"
+        },
+        {
+            "District": "Muzaffarnagar",
+            "DM": "Smt Selva Kumari J ",
+            "Contact": "9454417574",
+            "Email": "dmmuz@nic.in"
+        },
+        {
+            "District": "Shamli",
+            "DM": "Ms. Jasjeet Kaur",
+            "Contact": "9454416996",
+            "Email": "dmshm@nic.in"
+        },
+        {
+            "District": "Lucknow",
+            "DM": "Abhishek Prakash",
+            "Contact": "9415005000",
+            "Email": "dmluc@nic.in"
+        },
+        {
+            "District": "Hardoi",
+            "DM": "Pulkit Khare",
+            "Contact": "9454417556",
+            "Email": "dmhar@nic.in"
+        },
+        {
+            "District": "Lakhimpur Kheri",
+            "DM": "Shailendra Kumar Singh",
+            "Contact": "9454417558",
+            "Email": "dmlkh@nic.in"
+        },
+        {
+            "District": "Raebareli",
+            "DM": "Mrs. Shubhra Saxena",
+            "Contact": "9454417559",
+            "Email": "dmrae@nic.in"
+        },
+        {
+            "District": "Sitapur",
+            "DM": "Akhilesh Tiwari",
+            "Contact": "9454417560",
+            "Email": "dmsit@nic.in"
+        },
+        {
+            "District": "Unnao",
+            "DM": "Ravindra Kumar",
+            "Contact": "9454417561",
+            "Email": "dmunn@nic.in"
+        },
+        {
+            "District": "Meerut",
+            "DM": "Anil Dheigda",
+            "Contact": "9454417566",
+            "Email": "dmmee@nic.in"
+        },
+        {
+            "District": "Gautam Buddha Nagar",
+            "DM": "Suhas LY ",
+            "Contact": "9971020646",
+            "Email": "dmgbn@nic.in"
+        },
+        {
+            "District": "Baghpat",
+            "DM": "Mrs. Shakuntala Gautam ",
+            "Contact": "9454417562",
+            "Email": "dmbag@nic.in"
+        },
+        {
+            "District": "Bulandshahr",
+            "DM": "Ravindra Kumar II ",
+            "Contact": "9454417563",
+            "Email": "dmbul@nic.in"
+        },
+        {
+            "District": "Ghaziabad",
+            "DM": "Ajay Shankar Pandey ",
+            "Contact": "9454417565",
+            "Email": "dmgha@nic.in"
+        },
+        {
+            "District": "Hapur",
+            "DM": "Ms. Aditi Singh",
+            "Contact": "9454449848",
+            "Email": "dmhap@nic.in"
+        },
+        {
+            "District": "Bareilly",
+            "DM": "Nitish Kumar",
+            "Contact": "9454417524",
+            "Email": "dmbar@nic.in"
+        },
+        {
+            "District": "Badayu",
+            "DM": "Kumar Prashant",
+            "Contact": "9454417525",
+            "Email": "dmbud@nic.in"
+        },
+        {
+            "District": "Pilibhit",
+            "DM": "Vaibhav Srivastava",
+            "Contact": "9454417526",
+            "Email": "dmpil@nic.in"
+        },
+        {
+            "District": "Shahjhopur",
+            "DM": "Indra Vikram Singh",
+            "Contact": "9454417527",
+            "Email": "dmsha@nic.in"
+        },
+        {
+            "District": "Moradabad",
+            "DM": "Rakesh Kumar Singh",
+            "Contact": "9454417572",
+            "Email": "dmmor@nic.in"
+        },
+        {
+            "District": "Amroha",
+            "DM": "Umesh Mishra",
+            "Contact": "9454417571",
+            "Email": "dmjpn@nic.in"
+        },
+        {
+            "District": "Rampur",
+            "DM": "Anjaney Kumar Singh ",
+            "Contact": "9454417573",
+            "Email": "dmram@nic.in"
+        },
+        {
+            "District": "Bijnor",
+            "DM": "Ramakant Pandey",
+            "Contact": "9454417570",
+            "Email": "dmbij@nic.in"
+        },
+        {
+            "District": "Sambhal",
+            "DM": "Avinash Krishna Singh",
+            "Contact": "9454416890",
+            "Email": "dmbm-up@nic.in"
+        },
+        {
+            "District": "Varanasi",
+            "DM": "Kaushal Raj Sharma",
+            "Contact": "9454417579",
+            "Email": "dmvar@nic.in"
+        },
+        {
+            "District": "Chandauli",
+            "DM": "Navneet Singh Chahal ",
+            "Contact": "9454417576",
+            "Email": "dmchn@nic.in"
+        },
+        {
+            "District": "Jaunpur",
+            "DM": "Dinesh Kumar Singh",
+            "Contact": "9454417578",
+            "Email": "dmjau@nic.in"
+        },
+        {
+            "District": "Ghazipur",
+            "DM": "Om Prakash Arya",
+            "Contact": "9454417577",
+            "Email": "dmgaz@nic.in"
+        },
+        {
+            "District": "Azamgarh",
+            "DM": "Rajesh Kumar",
+            "Contact": "9454417521",
+            "Email": "dmaza@nic.in"
+        },
+        {
+            "District": "Ballia",
+            "DM": "Shrihari Pratap Shahi ",
+            "Contact": "9454417522",
+            "Email": "dmbal@nic.in"
+        },
+        {
+            "District": "Mau",
+            "DM": "Gyan Prakash Tripathi",
+            "Contact": "9454417523",
+            "Email": "dmmau@nic.in"
+        },
+        {
+            "District": "Mirzapur",
+            "DM": "Sushil Kumar Patel",
+            "Contact": "9454417567",
+            "Email": "dmmir@nic.in"
+        },
+        {
+            "District": "Bhadohi",
+            "DM": "Rajendra Prasad",
+            "Contact": "9454417568",
+            "Email": "dmsrn@nic.in"
+        },
+        {
+            "District": "Sonbhadra",
+            "DM": "S. Rajalingam ",
+            "Contact": "9454417569",
+            "Email": "dmson@nic.in"
+        },
+        {
+            "District": "Basti",
+            "DM": "Ashutosh Niranjan",
+            "Contact": "9454417528",
+            "Email": "dmbas@nic.in"
+        },
+        {
+            "District": "Santkabirnagar",
+            "DM": "Ravish Gupta",
+            "Contact": "9454417529",
+            "Email": "dmskn@nic.in"
+        },
+        {
+            "District": "Siddharthnagar",
+            "DM": "Deepak Meena",
+            "Contact": "9454417530",
+            "Email": "dmsid@nic.in"
+        },
+        {
+            "District": "Aligarh",
+            "DM": "Chandra Bhushan Singh",
+            "Contact": "9454417513",
+            "Email": "dmali@nic.in"
+        },
+        {
+            "District": "Hathras",
+            "DM": "Praveen Kumar Laxkar",
+            "Contact": "9454417515",
+            "Email": "dmhat@nic.in"
+        },
+        {
+            "District": "Kasganj",
+            "DM": "Chandra Prakash Singh",
+            "Contact": "9454417516",
+            "Email": "dmkr-up@nic.in"
+        },
+        {
+            "District": "Etah",
+            "DM": "Sukhlal Bharti",
+            "Contact": "9454417514",
+            "Email": "dmeth@nic.in"
+        }
+    ]
+}
